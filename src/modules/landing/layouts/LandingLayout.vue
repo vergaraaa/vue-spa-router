@@ -16,10 +16,14 @@
         </a>
       </div>
       <nav class="ml-auto space-x-4 flex items-center h-10 sm:space-x-6">
-        <RouterLink :to="{ name: 'home' }"> Home </RouterLink>
-        <RouterLink to="/features"> Features </RouterLink>
-        <RouterLink to="/pricing"> Pricing </RouterLink>
-        <RouterLink to="/contact"> Contact </RouterLink>
+        <div>
+          <RouterLink :to="{ name: 'home' }"> Home </RouterLink>
+          <RouterLink to="/features"> Features </RouterLink>
+          <RouterLink to="/pricing"> Pricing </RouterLink>
+          <RouterLink to="/contact"> Contact </RouterLink>
+          <RouterLink :to="{ name: 'login' }">Login</RouterLink>
+          <RouterLink to="/pokemons/1">Pokemon</RouterLink>
+        </div>
       </nav>
     </header>
     <!-- Fin Header -->
