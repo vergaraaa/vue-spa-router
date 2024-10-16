@@ -30,7 +30,13 @@
 
     <!-- Main -->
     <main class="flex-1 flex items-center justify-center">
-      <RouterView />
+      <!-- <RouterView /> -->
+
+      <router-view v-slot="{ Component }">
+        <keep-alive>
+          <component :is="Component" />
+        </keep-alive>
+      </router-view>
     </main>
     <!-- End Main -->
 
