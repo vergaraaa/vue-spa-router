@@ -3,7 +3,7 @@ import type {
   RouteLocationNormalizedGeneric,
 } from 'vue-router';
 
-const isAuthenticatedGuard = (
+const isAuthenticatedGuard = async (
   to: RouteLocationNormalizedGeneric,
   from: RouteLocationNormalizedGeneric,
   next: NavigationGuardNext,
